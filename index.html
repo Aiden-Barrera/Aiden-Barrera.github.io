@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cbd1d6fe3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Logo_8.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Aiden</span><br>Barrera from New Jersey </h1>
+        </div>
+    </div>
+</div>
+<!---------------About------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user2updated.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Welcome to my corner of the internet! I'm Aiden Barrera, an enthusiastic and detail-oriented Software Engineer based in New Jersey. Boasting proficiency in a variety of programming languages, including Python, Java, C++, C#, HTML, and CSS; I also possess a robust understanding of data structures and algorithms. As I progress in both my academic and professional journey, I am committed to continually expanding my knowledge in computer science. <br><br>My passion lies in transforming intricate problems into refined solutions. My coding odyssey commenced during middle school when I was introduced to a tech class centered around programming. That initial exposure sparked my interest, and I've been devoted to refining my skills and staying abreast of the latest industry trends ever since. Join me on this exciting journey as I navigate through the dynamic world of coding and technology.   </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding</span><br>I possess a comprehensive proficiency in a diverse array of programming languages, encompassing CSS, C++, Java, JavaScript, HTML, C#, and Python. My expertise extends beyond language syntax, encompassing a solid foundation in data structures and algorithms. This knowledge is applied independently across each programming language, allowing me to navigate and optimize code effectively. </li>
+                        <li><span>Critcal thinker/Problem Solver</span><br>I have developed a keen ability to engage in critical thinking, particularly in crucial situations, harnessing this skill to effectively tackle challenges within the tech field. This aptitude extends to innovating solutions for coding problems and projects, reflecting my capacity to approach complex scenarios with analytical and inventive thinking.</li>
+                        <li><span>Team Collaboration</span><br>I have significantly enhanced my ability to collaborate within team environments, actively seeking opportunities that involve working with team members rather than in isolation. I believe that the collaborative synergy within a team fosters collective success and motivates individuals to excel in their goals and assignments. Engaging in projects and lab assignments has provided me with valuable insights from team members, exposing me to diverse perspectives on problem-solving and more efficient approaches to algorithmic solutions. Likewise, I take pleasure in assisting teammates who may find themselves in need of guidance..</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>NJIT CS Teacher Assistant</li>
+                        <li><span>2021 - 2022</span><br>Stem Tutor Memorial Middle School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>Bachelor of Arts for Computer Science from NJIT</li>
+                        <li><span>GPA</span><br>3.8</li>
+                        <li><span>Honors</span><br>Dean’s List (issued by NJIT), The National Society of Collegiate Scholars, and Phi Eta Sigma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------services------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Programmer</h2>
+                <p>As a programmer, I have acquired proficiency in a variety of languages, including Java, C++, CSS, C#, HTML, JavaScript, and Python. Leveraging the combination of HTML, CSS, and JavaScript, I have developed expertise in website structuring and feel at ease with web development, exemplified by the construction of this very website.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Collaborative Problem-Solver</h2>
+                <p>As a collaborative problem-solver, I excel at breaking down complex challenges into manageable components, particularly in team settings. I prioritize leveraging collective insights to foster a positive and dynamic environment, ensuring everyone contributes to potential solutions. This collaborative approach is evident in scenarios like lab assignments, where my partners and I engage in discussions to explore and implement solutions together.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Leadership</h2>
+                <p>With a wealth of professional and academic experience, I naturally gravitate towards leadership roles. From guiding collaborative efforts in computer science lab assignments to empowering students as a STEM tutor, and assuming a leadership role as a Teaching Assistant at NJIT, I consistently foster a supportive environment for success. These experiences reinforce my commitment to leadership and equip me with the skills to inspire and guide others effectively.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------portfolio--------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work_1.png">
+                <div class="layered">
+                    <h3>NJIT Data Structures & algorithms TA</h3>
+                    <p>As a Teaching Assistant (TA) for two Data Structures and Algorithms sections at NJIT, I assumed a diverse role that exceeded conventional expectations. Serving as both a grader and a mentor, my main objective was to create an atmosphere in which students not only navigated the academic demands of the course but also conquered their individual challenges.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work_2updated.png">
+                <div class="layered">
+                    <h3>Middle School Stem Tutor</h3>
+                    <p>Collaborated with students to complete homework assignments, identify lagging skills, and correct weaknesses. Motivated students towards learning and studying to build self-confidence and reduce fear of failure. Supported students with helpful study habits and exam strategies.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>aidenjayce28@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(332) 201 6672</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aiden-barrera/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/ABResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name *" required>
+                        <input type="email" name="Email" placeholder="Your Email *" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message *"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Aiden Barrera. Made with <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sideMenu = document.getElementById("sidemenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0"
+    }
+    function closeMenu(){
+        sideMenu.style.right = "-180px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzn0ysFSvCc4MkTfc-y1yR2poM1liL2rnv3TUGwFBQgCbmhiEOzNJuJg6tO4jzOfcbI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
